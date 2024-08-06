@@ -1,16 +1,52 @@
-Setting Up socket.io in backend 
+# Simple Chat Application Backend
 
-1. Initialize express App
-   express.js documentation : https://expressjs.com/ 
+This is the backend for the Simple Chat Application, built using Node.js, Express, and Socket.IO.
 
-2. Import createServer from http.
+## Overview
 
-3. Import Server from socket.io.
+The backend handles real-time messaging, user connections, and room management for the chat application.
 
-4. Create a server variable and call the createServer method and pass app variable (from express) as argument.
+## Technologies
 
-5. Create new instance of Server (from socket.io) and pass server as argument and store this in a variable io.
+- Node.js
+- Express
+- Socket.IO
 
-6. You can pass corsOptions as 2nd argument.
+## Installation
 
-7. 
+1. **Clone the repository:**
+
+   ```bash
+   git clone <repository_url>
+   cd <repository_folder>/backend
+
+    Install dependencies:
+
+    bash
+
+npm install
+
+Start the server:
+
+bash
+
+node server.js
+
+Server will be running on:
+
+arduino
+
+    http://localhost:3000
+
+Usage
+
+    Run the backend server:
+
+    Ensure the backend server is running on http://localhost:3000.
+
+    API Endpoints:
+        GET /: Returns a simple message.
+
+    Socket.IO Events:
+        connection: Triggered when a user connects.
+       
