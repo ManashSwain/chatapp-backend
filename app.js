@@ -7,7 +7,7 @@ const port = 3000;
 const app = express();
 const server = createServer(app);
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://simple-chat-app-plum.vercel.app/",
   credentials: true,
   methods: ["GET", "POST"],
 };
