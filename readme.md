@@ -4,7 +4,7 @@ This is the backend for the Simple Chat Application, built using Node.js, Expres
 
 ## Overview
 
-The backend handles real-time messaging, user connections, and room management for the chat application.
+The backend handles real-time messaging  and room management for the chat application.
 
 ## Technologies
 
@@ -16,27 +16,19 @@ The backend handles real-time messaging, user connections, and room management f
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone <repository_url>
-   cd <repository_folder>/backend
+  
+   git clone https://github.com/ManashSwain/chatapp-backend.git
+   cd chatapp-backend
 
     Install dependencies:
 
-    bash
-
-npm install
+    npm install
 
 Start the server:
 
-bash
-
 node server.js
 
-Server will be running on:
-
-arduino
-
-    http://localhost:3000
+Server will be running on: http://localhost:3000
 
 Usage
 
