@@ -30,6 +30,9 @@ io.on("connection", (socket) => {
   socket.on("room-details", (roomName) => {
     socket.join(roomName);
   });
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
 });
 
 server.listen(port, () => {
