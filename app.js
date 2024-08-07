@@ -10,6 +10,7 @@ const corsOptions = {
   origin: "*",
   credentials: true,
   methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
 };
 const io = new Server(server, {
   cors: corsOptions,
