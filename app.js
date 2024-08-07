@@ -16,7 +16,7 @@ const io = new Server(server, {
 });
 
 // Middlewares
-app.use(cors());
+app.use(cors(corsOptions));
 app.get("/", (req, res) => {
   res.send("This is our Backend of chat Application");
 });
