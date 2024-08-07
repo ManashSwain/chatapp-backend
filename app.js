@@ -7,20 +7,14 @@ const port = 3000;
 const app = express();
 const server = createServer(app);
 const corsOptions = {
-  origin: "https://simple-chat-app-plum.vercel.app",
+  origin: "http://localhost:5173",
   credentials: true,
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"],
+  methods: ["GET", "POST"]
 };
 app.use(cors(corsOptions));
 const io = new Server(server, {
-  cors: {
-    origin: "https://simple-chat-app-plum.vercel.app",
-    credentials: true,
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
-  }
-});
+  cors : corsOptions
+}); 
 
 // Middlewares
 

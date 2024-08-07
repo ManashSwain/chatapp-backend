@@ -42,5 +42,5 @@ Usage
     Socket.IO Events:
         connection: Triggered when a user connects.
 
-Backend url : https://chatapp-backend-alpha.vercel.app/
+
        
